@@ -1,0 +1,43 @@
+:root{
+    --prymary-bright-red:hsl(12, 88%, 59%);
+    --prymary-dark-blue:hsl(228, 39%, 23%);
+    --neutral-dark-grayish: hsl(227, 12%, 61%);
+    --neutral-very-dark-blue:hsl(233, 12%, 13%);
+    --neutral-very-pale-red:hsl(13, 100%, 96%);
+    --neutral-very-light-gray:hsl(0, 0%, 98%);
+}
+
+/* Estilos generales */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* botones */
+.btn{
+    color: var(--neutral-very-light-gray);
+    background-color: var(--prymary-bright-red);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    font-weight: 500;
+    /* border: solid blue 2px; */
+}
+/* header */
+
