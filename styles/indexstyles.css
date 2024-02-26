@@ -1,105 +1,178 @@
-:root{
-    --prymary-bright-red:hsl(12, 88%, 59%);
-    --prymary-dark-blue:hsl(228, 39%, 23%);
-    --neutral-dark-grayish: hsl(227, 12%, 61%);
-    --neutral-very-dark-blue:hsl(233, 12%, 13%);
-    --neutral-very-pale-red:hsl(13, 100%, 96%);
-    --neutral-very-light-gray:hsl(0, 0%, 98%);
+:root {
+  --prymary-bright-red: hsl(12, 88%, 59%);
+  --prymary-dark-blue: hsl(228, 39%, 23%);
+  --neutral-dark-grayish: hsl(227, 12%, 61%);
+  --neutral-very-dark-blue: hsl(233, 12%, 13%);
+  --neutral-very-pale-red: hsl(13, 100%, 96%);
+  --neutral-very-light-gray: hsl(0, 0%, 98%);
 }
 
 /* Estilos generales */
 
-html{
-    box-sizing: border-box;
-    font-size: 62.5%;
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-*,*::before,*::after{
-    box-sizing: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-body{
-    font-family: "Be Vietnam Pro", sans-serif;
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
 /* tipografia */
-h1,h2,h3{
-    color: var(--prymary-dark-blue);
+h1,
+h2,
+h3 {
+  color: var(--prymary-dark-blue);
 }
-h1{
-    font-size: 3rem;
+h1 {
+  font-size: 3rem;
 }
-h2{
-    font-size: 2rem;
+h2 {
+  font-size: 2rem;
 }
-h3{
-    font-size: 1rem;
+h3 {
+  font-size: 1.5rem;
 }
-p{
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    color: var(--neutral-dark-grayish);
+p {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: var(--neutral-dark-grayish);
 }
 
 /* botones */
-.btn{
-    color: var(--neutral-very-light-gray);
-    background-color: var(--prymary-bright-red);
-    padding: 1rem 3rem;
-    border-radius: 30px;
-    font-weight: 500;
-    /* border: solid blue 2px; */
+.btn {
+  color: var(--neutral-very-light-gray);
+  background-color: var(--prymary-bright-red);
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  font-weight: 500;
+  /* border: solid blue 2px; */
 }
-.btn-navigation{
-    display: none;
+.btn-navigation {
+  /* display: none; */
 }
 
-.toggle{
-    border: none;
-    background: none;
+.toggle {
+  border: none;
+  background: none;
 }
 /* header */
 
-.menu{
-    display: none;
+.menu {
+  display: none;
 }
 
-.nav-container{
-    display: flex;
-    justify-content: space-between;
-    width: 95%;
-    max-width: 1110px;
-    margin: 40px auto 30px auto;
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  max-width: 1110px;
+  margin: 40px auto 30px auto;
 }
 
-.main-container{
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+.main-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.main-text p{
-    margin-bottom: 30px;
+.main-text p {
+  margin-bottom: 30px;
 }
 
-.main-text{
-    text-align: center;
-    margin-bottom: 4rem;
+.main-text {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.main-image{
-    max-width: 350px;
-    margin: 0 auto;
-    /* border: solid red 2px; */
+.main-image {
+  max-width: 350px;
+  margin: 0 auto;
+  /* border: solid red 2px; */
 }
-.main-image img{
-    width: 100%;
+.main-image img {
+  width: 100%;
+}
+
+/* about */
+
+.about-head {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-list h3 {
+  background-color: var(--neutral-very-pale-red);
+  padding: 8px 0px;
+  margin-left: 15px;
+}
+
+.about-card p {
+  text-align: center;
+  margin-bottom: 4rem;
+  line-height: 2.5rem;
+}
+
+.number {
+  padding: 8px 15px;
+  background-color: var(--prymary-bright-red);
+  border-radius: 25px;
+  color: var(--neutral-very-light-gray);
+  margin: 0 10px 0 0;
+}
+
+/* Testimonials */
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0 50px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--neutral-very-light-gray);
+  max-width: 500px;
+  padding-top: 60px;
+  display: none;
+}
+
+.active-card {
+  display: flex;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--prymary-bright-red);
+  display: inline-block;
+  margin: 20px 0 45px 0;
+}
+.active,
+.dot:hover {
+  background-color: var(--prymary-bright-red);
 }
